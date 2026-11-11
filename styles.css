@@ -16,3 +16,21 @@ a{color:#216fab;text-decoration:none}a:hover{text-decoration:underline}.wrap{wid
 .contact-email{margin-top:14px!important}
 @media(max-width:720px){.top{height:auto;min-height:75px;flex-wrap:wrap;align-content:center;row-gap:10px;padding:12px 0}.header-actions{flex:1;flex-wrap:wrap;gap:8px 14px}.nav{gap:12px}.language-toggle{padding:7px 10px}}
 @media(max-width:420px){.top{align-items:flex-start}.header-actions{justify-content:flex-end}.nav{order:2;width:100%;justify-content:flex-end}.language-control{order:1}.hero{padding-top:42px}.brand{font-size:21px}.mark{width:36px;height:36px}}
+
+/* Readable policy text, keyboard access and clean printable copies. */
+.policy p,.policy li{font-size:16px;line-height:1.85}
+.policy h2{line-height:1.5;scroll-margin-top:24px}
+.offline-note{padding:15px 20px;border:1px solid #bddfff;border-radius:16px;background:#edf7ff;color:#28516f;font-size:14px;margin:0 0 20px}
+.card .contact-notice{font-size:13px;line-height:1.7;color:#53657b}
+:lang(ja){word-break:normal;line-break:strict}
+a:focus-visible,button:focus-visible{outline:3px solid #3a91d4;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  @page{margin:16mm}
+  body{background:#fff;color:#111}
+  .wrap{width:100%}.header-actions,.footer,.offline-note{display:none}
+  .top{height:auto;padding-bottom:12px}.hero{padding:24px 0 18px}
+  .hero h1{font-size:28px}.policy{border:0;padding:0;box-shadow:none;margin:0}
+  .policy h2{break-after:avoid-page}.policy p{font-size:10pt;line-height:1.65;orphans:3;widows:3}
+  .policy p,.fine{color:#333!important}a{color:inherit;text-decoration:underline}
+}
